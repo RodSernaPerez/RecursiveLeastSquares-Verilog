@@ -1,0 +1,33 @@
+-- Copyright(C) 2006 by Xilinx, Inc. All rights reserved. 
+-- The files included in this design directory contain proprietary, confidential information of 
+-- Xilinx, Inc., are distributed under license from Xilinx, Inc., and may be used, copied 
+-- and/or disclosed only pursuant to the terms of a valid license agreement with Xilinx, Inc. 
+-- This copyright notice must be retained as part of this text at all times. 
+
+
+FLASH is a simple schematic project illistrating hierarchy
+
+DESIGN TYPE: ISE (chip 4VLX15 SF363 -12)
+ 
+CONTROLS (Inputs):
+       CLKIN      - external clock input,  
+OUTPUTS:  
+       LED [6..0] - 7-segment display for the decade counter,
+       Q   [7..0] - LEDs for Johnson counter outputs.  
+
+DESCRIPTION: This simple project contains two counters: counter and 8-bit Johnson counter.  Outputs the counters are connected to the 7-segment          display (counter) and 8 LEDs (Johnson).  Clock inputs of the counters are connected to the external signal CLKIN (divided by 2 for the counter). 
+
+TIMINGS: Requires the following libraries for simulation: 
+    unisim 
+    simprim 
+	  
+Behavioural and RTL Simulation done using VHDL Testbench (flash_tb.vhd). 
+  
+
+NOTE: If you are trying to run this example in a read-only location, the design hierachy will not display properly.  Please copy the example project to a new location by using either Project Save As... from the File menu pulldown in ISE or some other method of your choice.  Copy the example to a location where you have write permissions and the hiearchy will display properly. 
+  
+For support information and contacts please see: 
+  
+	http://www.xilinx.com/support
+or 
+	http://www.xilinx.com/support/services/contact_info.htm
